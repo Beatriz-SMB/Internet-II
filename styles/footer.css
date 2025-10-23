@@ -1,0 +1,132 @@
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+footer .footer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation .spotify-logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.navigation h5 {
+    color: #919496;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.navigation li {
+    margin-bottom: 15px;
+}
+
+.navigation li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navigation .community>ul {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.list-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.navigation li a:hover {
+    color: var(--green);
+    text-decoration: underline;
+
+}
+
+.linklist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.linklist ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.linklist a,
+.linklist p {
+    color: #919496;
+    font-size: 12px;
+}
+
+.linklist a:hover {
+    color: var(--green);
+}
+
+.social-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222326;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-mask {
+    width: 24px;
+    height: 24px;
+
+    background-color: white;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    transition: background-color 0.3s ease;
+}
+
+.social-links li a:hover .icon-mask {
+    background-color: var(--green);
+}
+
+button {
+    background-color: white;
+    font-weight: 700;
+    font-size: larger;
+    padding: 15px;
+    border-radius: 30px;
+}
