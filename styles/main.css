@@ -1,7 +1,8 @@
 :root {
   --green: #1ED760;
+  --blue: #2D46B9;
   --black: #000000;
-    --white: #ffffff;
+  --white: #ffffff;
 }
 
 
@@ -53,29 +54,67 @@ header > input[type="text"]::placeholder {
 }
 
 section {
+  border-bottom: 1px solid var(--black);
   display: flex;
-  width: 90%;
+  width: 100%;
+}
+
+section > div.about-spotify {
+  border-right: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 80px;
+  text-align: center;
+  width: 70%;
 }
 
 section > .about-spotify > img {
   margin: auto;
   height: auto;
-  padding: 50px 0;
-  width: 800px;
+  width: 100%;
 }
 
 section > .about-spotify > h1 {
-  font-size: 102px;
+  font-size: 140px;
   font-weight: 700;
-  padding: 0 120px;
+  margin: 20px 0 8px 0;
+  text-align: start;
   text-transform: capitalize;
-  width: 50%;
 }
 
 section > .about-spotify > p {
   font-size: 18px;
   line-height: 1.6;
-  margin: 20px;
-  padding: 0 120px;
   text-align: justify;
+}
+
+section > .teste {
+  width: 30%;
+}
+
+
+.ceo {
+  border-bottom: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.ceo:hover {
+  background: var(--blue);
+}
+
+section > .teste > .ceo > img {
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+
+.ceo > h3 {
+  color: var(--green);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 20px 0 8px 0;
+  text-transform: uppercase;
 }
