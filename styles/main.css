@@ -1,0 +1,81 @@
+:root {
+  --green: #1ED760;
+  --black: #000000;
+    --white: #ffffff;
+}
+
+
+header {
+  align-items: center;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  height: 12vh;
+  width: 100%;
+}
+
+header > img {
+  height: 40px;
+  margin: 0 20px;
+  width: auto;
+}
+
+header > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+header > nav > a {
+  color: var(--white);
+  font-size: 14px;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+header > nav > a:hover {
+  text-decoration: underline;
+}
+
+header > input[type="text"] {
+  background: url(../assets/img/search.svg) no-repeat right 10px center;
+  border: none;
+  border-bottom: 1.5px solid var(--white);
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+header > input[type="text"]::placeholder {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  width: 90%;
+}
+
+section > .about-spotify > img {
+  margin: auto;
+  height: auto;
+  padding: 50px 0;
+  width: 800px;
+}
+
+section > .about-spotify > h1 {
+  font-size: 102px;
+  font-weight: 700;
+  padding: 0 120px;
+  text-transform: capitalize;
+  width: 50%;
+}
+
+section > .about-spotify > p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 0 120px;
+  text-align: justify;
+}
