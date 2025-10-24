@@ -18,7 +18,7 @@ header {
   width: 100%;
 }
 
-header > div {
+header>div {
   align-items: center;
   display: flex;
   gap: 80px;
@@ -35,24 +35,24 @@ header > div {
   width: auto;
 }
 
-header > div > .logo-container > h2 {
+header>div>.logo-container>h2 {
   font-size: 24px;
   font-weight: 700;
 }
 
-header > div > ul {
+header>div>ul {
   align-items: center;
   display: flex;
   gap: 30px;
   list-style: none;
 }
 
-header > div > ul > li {
+header>div>ul>li {
   display: flex;
   align-items: center;
 }
 
-header > div > ul > li > a {
+header>div>ul>li>a {
   color: var(--white);
   font-size: 16px;
   font-weight: 700;
@@ -60,7 +60,7 @@ header > div > ul > li > a {
   text-decoration: none;
 }
 
-header > input[type="text"] {
+header>input[type="text"] {
   background: url(../assets/img/search.svg) no-repeat right 10px center;
   border: none;
   border-bottom: 1.5px solid var(--white);
@@ -69,7 +69,7 @@ header > input[type="text"] {
   width: 480px;
 }
 
-header > input[type="text"]::placeholder {
+header>input[type="text"]::placeholder {
   color: var(--white);
   font-size: 28px;
   font-weight: 700;
@@ -79,9 +79,10 @@ section {
   border-bottom: 1px solid var(--black);
   display: flex;
   width: 100%;
+  background-color: #e0e0e0;
 }
 
-section > div.about-spotify {
+section>div.about-spotify {
   border-right: 1px solid var(--black);
   display: flex;
   flex-direction: column;
@@ -91,13 +92,13 @@ section > div.about-spotify {
   width: 65%;
 }
 
-section > .about-spotify > img {
+section>.about-spotify>img {
   margin: auto;
   height: auto;
   width: 100%;
 }
 
-section > .about-spotify > h1 {
+section>.about-spotify>h1 {
   font-size: 140px;
   font-weight: 700;
   margin: 20px 0 8px 0;
@@ -105,13 +106,13 @@ section > .about-spotify > h1 {
   text-transform: capitalize;
 }
 
-section > .about-spotify > p {
+section>.about-spotify>p {
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
 }
 
-section > .teste {
+section>.teste {
   width: 35%;
 }
 
@@ -124,20 +125,21 @@ section > .teste {
   padding: 50px;
 }
 
-.ceo:hover{
+.ceo:hover {
   background: var(--blue);
 }
 
-.ceo:hover, .ceo:hover h3 {
+.ceo:hover,
+.ceo:hover h3 {
   color: var(--white);
 }
 
-section > .teste > .ceo > img {
+section>.teste>.ceo>img {
   height: auto;
   width: 100%;
 }
 
-.ceo > h3 {
+.ceo>h3 {
   color: var(--green);
   font-size: 15px;
   font-weight: 700;
@@ -151,6 +153,7 @@ section > .teste > .ceo > img {
   flex-direction: column;
   padding: 50px;
   position: relative;
+  height: 100vh;
 }
 
 .life-at-spotify:hover {
@@ -161,7 +164,7 @@ section > .teste > .ceo > img {
   color: var(--white);
 }
 
-.life-at-spotify > h2 {
+.life-at-spotify>h2 {
   color: var(--black);
   font-size: 58px;
   font-weight: 700;
@@ -170,13 +173,13 @@ section > .teste > .ceo > img {
   text-transform: capitalize;
 }
 
-.life-at-spotify > img {
+.life-at-spotify>img {
   height: auto;
   margin-top: 48px;
   width: 100%;
 }
 
-.life-at-spotify > button {
+.life-at-spotify>button {
   background: var(--green);
   border: none;
   border-radius: 50px;
@@ -190,7 +193,7 @@ section > .teste > .ceo > img {
   width: fit-content;
 }
 
-.life-at-spotify > button:hover {
+.life-at-spotify>button:hover {
   background: var(--white);
 }
 
@@ -202,7 +205,7 @@ section > .teste > .ceo > img {
   width: 65%;
 }
 
-.our-mission > p {
+.our-mission>p {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.6;
@@ -217,14 +220,14 @@ section > .teste > .ceo > img {
   width: 35%;
 }
 
-.by-numbers > h2 {
+.by-numbers>h2 {
   color: var(--white);
   font-size: 58px;
   font-weight: 700;
   margin: 80px auto 20px auto;
 }
 
-.by-numbers > button {
+.by-numbers>button {
   background: var(--black);
   border: 1px solid var(--green);
   border-radius: 50px;
@@ -238,7 +241,7 @@ section > .teste > .ceo > img {
   width: fit-content;
 }
 
-.by-numbers > button:hover {
+.by-numbers>button:hover {
   background: var(--green);
   color: var(--black);
 }
@@ -254,29 +257,98 @@ h4 {
   margin: 22px 0;
 }
 
-.sustainability, .play-fair, .loud-clear {
+.sustainability,
+.play-fair,
+.loud-clear {
   display: flex;
   flex-direction: column;
   padding: 50px;
   width: 33.33%;
 }
 
-.sustainability, .play-fair {
+.sustainability,
+.play-fair {
   border-right: 1px solid var(--black);
 }
 
-.sustainability > img,
-.play-fair > img,
-.loud-clear > img {
+.sustainability>img,
+.play-fair>img,
+.loud-clear>img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.sustainability > p,
-.play-fair > p,
-.loud-clear > p {
+.sustainability>p,
+.play-fair>p,
+.loud-clear>p {
   font-size: 16px;
   line-height: 1.6;
   text-align: justify;
+}
+
+/*
+==================================================
+ ESTILOS DO LIGHT MODE
+==================================================
+*/
+
+.theme-toggle-button {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: #eee;
+}
+
+body.light-mode {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.light-mode header {
+  background: #f0f0f0;
+  color: var(--black);
+}
+
+body.light-mode header>nav>a {
+  color: var(--black);
+}
+
+body.light-mode header>input[type="text"] {
+  border-bottom: 1.5px solid var(--black);
+}
+
+body.light-mode header>input[type="text"]::placeholder {
+  color: #555;
+}
+
+body.light-mode section {
+  border-bottom: 1px solid;
+}
+
+body.light-mode section>div.about-spotify {
+  border-right: 1px solid;
+}
+
+body.light-mode .ceo {
+  border-bottom: 1px solid;
+}
+
+body.light-mode .theme-toggle-button {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+body.light-mode .theme-toggle-button:hover {
+  background-color: #333;
 }
