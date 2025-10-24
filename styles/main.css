@@ -11,40 +11,61 @@ header {
   background: var(--black);
   color: var(--white);
   display: flex;
+  justify-content: space-between;
   height: 12vh;
+  padding: 0 40px;
   width: 100%;
 }
 
-header > img {
+header > div {
+  align-items: center;
+  display: flex;
+  gap: 80px;
+}
+
+.logo-container {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.spotify-logo {
   height: 40px;
-  margin: 0 20px;
   width: auto;
 }
 
-header > h2 {
+header > div > .logo-container > h2 {
   font-size: 24px;
   font-weight: 700;
-  margin-left: 20px;
 }
 
-header > nav > a {
+header > div > ul {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+header > div > ul > li {
+  display: flex;
+  align-items: center;
+}
+
+header > div > ul > li > a {
   color: var(--white);
-  font-size: 14px;
-  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 4px;
   text-decoration: none;
-}
-
-header > nav > a:hover {
-  text-decoration: underline;
 }
 
 header > input[type="text"] {
   background: url(../assets/img/search.svg) no-repeat right 10px center;
   border: none;
   border-bottom: 1.5px solid var(--white);
-  flex-grow: 1;
   font-size: 14px;
   padding: 8px 12px;
+  width: 480px;
 }
 
 header > input[type="text"]::placeholder {
@@ -66,7 +87,7 @@ section > div.about-spotify {
   margin: auto;
   padding: 80px;
   text-align: center;
-  width: 70%;
+  width: 65%;
 }
 
 section > .about-spotify > img {
@@ -90,24 +111,28 @@ section > .about-spotify > p {
 }
 
 section > .teste {
-  width: 30%;
+  width: 35%;
 }
-
 
 .ceo {
   border-bottom: 1px solid var(--black);
   display: flex;
   flex-direction: column;
+  height: 600px;
+  align-items: flex-start;
   padding: 50px;
 }
 
-.ceo:hover {
+.ceo:hover{
   background: var(--blue);
+}
+
+.ceo:hover, .ceo:hover h3 {
+  color: var(--white);
 }
 
 section > .teste > .ceo > img {
   height: auto;
-  margin: auto;
   width: 100%;
 }
 
@@ -117,4 +142,53 @@ section > .teste > .ceo > img {
   font-weight: 700;
   margin: 20px 0 8px 0;
   text-transform: uppercase;
+}
+
+.life-at-spotify {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  position: relative;
+}
+
+.life-at-spotify:hover {
+  background: var(--blue);
+}
+
+.life-at-spotify:hover h2 {
+  color: var(--white);
+}
+
+.life-at-spotify > h2 {
+  color: var(--black);
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: absolute;
+  text-transform: capitalize;
+}
+
+.life-at-spotify > img {
+  height: auto;
+  margin-top: 48px;
+  width: 100%;
+}
+
+.life-at-spotify > button {
+  background: var(--green);
+  border: none;
+  border-radius: 50px;
+  color: var(--black);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 40px auto;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.life-at-spotify > button:hover {
+  background: var(--white);
 }
