@@ -9,7 +9,7 @@ footer {
 footer .footer {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     padding-top: 30px;
     padding-bottom: 20px;
 }
@@ -129,4 +129,57 @@ button {
     font-size: larger;
     padding: 15px;
     border-radius: 30px;
+}
+
+/* --- Estilos do Footer para Light Mode --- */
+
+body.light-mode footer {
+    background-color: #f0f0f0;
+    color: var(--black);
+}
+
+body.light-mode .navigation .spotify-logo {
+    filter: invert(1);
+}
+
+body.light-mode .navigation h5 {
+    color: #555;
+}
+
+body.light-mode .navigation li a {
+    color: var(--black);
+}
+
+body.light-mode .navigation li a:hover {
+    color: var(--green);
+}
+
+body.light-mode .list-icon {
+    filter: invert(1);
+}
+
+body.light-mode .linklist a,
+body.light-mode .linklist p {
+    color: #555;
+}
+
+body.light-mode .linklist a:hover {
+    color: var(--green);
+}
+
+body.light-mode .social-links li a {
+    background-color: #ddd;
+}
+
+body.light-mode .icon-mask {
+    background-color: var(--black);
+}
+
+body.light-mode .social-links li a:hover .icon-mask {
+    background-color: var(--green);
+}
+
+body.light-mode footer button {
+    background-color: var(--black);
+    color: var(--white);
 }

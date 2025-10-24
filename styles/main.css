@@ -15,30 +15,30 @@ header {
   width: 100%;
 }
 
-header > img {
+header>img {
   height: 40px;
   margin: 0 20px;
   width: auto;
 }
 
-header > h2 {
+header>h2 {
   font-size: 24px;
   font-weight: 700;
   margin-left: 20px;
 }
 
-header > nav > a {
+header>nav>a {
   color: var(--white);
   font-size: 14px;
   margin: 0 15px;
   text-decoration: none;
 }
 
-header > nav > a:hover {
+header>nav>a:hover {
   text-decoration: underline;
 }
 
-header > input[type="text"] {
+header>input[type="text"] {
   background: url(../assets/img/search.svg) no-repeat right 10px center;
   border: none;
   border-bottom: 1.5px solid var(--white);
@@ -47,7 +47,7 @@ header > input[type="text"] {
   padding: 8px 12px;
 }
 
-header > input[type="text"]::placeholder {
+header>input[type="text"]::placeholder {
   color: var(--white);
   font-size: 28px;
   font-weight: 700;
@@ -57,9 +57,10 @@ section {
   border-bottom: 1px solid var(--black);
   display: flex;
   width: 100%;
+  background-color: #e0e0e0;
 }
 
-section > div.about-spotify {
+section>div.about-spotify {
   border-right: 1px solid var(--black);
   display: flex;
   flex-direction: column;
@@ -69,13 +70,13 @@ section > div.about-spotify {
   width: 70%;
 }
 
-section > .about-spotify > img {
+section>.about-spotify>img {
   margin: auto;
   height: auto;
   width: 100%;
 }
 
-section > .about-spotify > h1 {
+section>.about-spotify>h1 {
   font-size: 140px;
   font-weight: 700;
   margin: 20px 0 8px 0;
@@ -83,13 +84,13 @@ section > .about-spotify > h1 {
   text-transform: capitalize;
 }
 
-section > .about-spotify > p {
+section>.about-spotify>p {
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
 }
 
-section > .teste {
+section>.teste {
   width: 30%;
 }
 
@@ -105,16 +106,82 @@ section > .teste {
   background: var(--blue);
 }
 
-section > .teste > .ceo > img {
+section>.teste>.ceo>img {
   height: auto;
   margin: auto;
   width: 100%;
 }
 
-.ceo > h3 {
+.ceo>h3 {
   color: var(--green);
   font-size: 15px;
   font-weight: 700;
   margin: 20px 0 8px 0;
   text-transform: uppercase;
+}
+
+/*
+==================================================
+ ESTILOS DO LIGHT MODE
+==================================================
+*/
+
+.theme-toggle-button {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: #eee;
+}
+
+body.light-mode {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.light-mode header {
+  background: #f0f0f0;
+  color: var(--black);
+}
+
+body.light-mode header>nav>a {
+  color: var(--black);
+}
+
+body.light-mode header>input[type="text"] {
+  border-bottom: 1.5px solid var(--black);
+}
+
+body.light-mode header>input[type="text"]::placeholder {
+  color: #555;
+}
+
+body.light-mode section {
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode section>div.about-spotify {
+  border-right: 1px solid #ddd;
+}
+
+body.light-mode .ceo {
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode .theme-toggle-button {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+body.light-mode .theme-toggle-button:hover {
+  background-color: #333;
 }
